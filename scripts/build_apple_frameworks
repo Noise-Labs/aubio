@@ -72,7 +72,7 @@ set -e
 
 #./waf dist --verbose
 
-for PLATFORM in darwin ios iosimulator
+for PLATFORM in  ios iosimulator
 do
   rm -rf $AUBIO_TMPDIR/dist-$PLATFORM
   WAF_OPTIONS="--verbose --destdir $AUBIO_TMPDIR/dist-$PLATFORM --with-target-platform $PLATFORM $WAFCONF"
